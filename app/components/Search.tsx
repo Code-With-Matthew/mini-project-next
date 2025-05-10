@@ -19,10 +19,12 @@ export default function Search() {
         type='text'
         value={search}
         onChange={(e) => setSearch(e.target.value)}
-        className='bg-white p-2 w-80 text-xl rounded-xl'
+        className='bg-white p-3 w-96 text-xl rounded-xl text-gray-800 placeholder-gray-500 
+        focus:outline-none focus:ring-2 focus:ring-blue-500'
         placeholder='Cari apa rek....'
       />
-      <button className='p-2 text-xl rounded-xl bg-slate-300 ml-2 font-bold'>
+      <button className='p-3 text-xl rounded-xl bg-slate-300 ml-2 font-bold
+      hover:bg-slate-400 transition-colors'>
         <p>💣</p>
       </button>
     </form>
